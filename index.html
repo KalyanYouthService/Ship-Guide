@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
 <title>SHIP Checklists</title>
 <meta name="theme-color" content="#74200A">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -18,8 +19,8 @@
    PICTURE: the working guide itself; each step a coloured divider.
    COLOUR and TYPE: Kalyan rust header, cream ground, six priority colours; Source Serif titles, Inter body.
    LAYOUT: header with search and mode switch; step list left; one step at a time right. */
-:root{color-scheme:light dark;--bg:light-dark(#FAF5ED,#1d1512);--card:light-dark(#FFFDF9,#2a1f1a);--sub:light-dark(#F4ECDF,#33261f);--ink:light-dark(#2B1D17,#f3e9df);--muted:light-dark(#5A4A42,#c9b8ab);--line:light-dark(#E6D8C6,#4a3a30);--rust:#7D210A;--tan:#C49668}
-:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+:root{color-scheme:light;--bg:#FAF5ED;--card:#FFFDF9;--sub:#F4ECDF;--ink:#2B1D17;--muted:#5A4A42;--line:#E6D8C6;--rust:#7D210A;--tan:#C49668}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:light}
 *{box-sizing:border-box;min-width:0}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,Arial,sans-serif;overflow-x:clip}
 h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;margin:0;text-wrap:balance}
@@ -58,7 +59,6 @@ main{display:flex;flex-direction:column;gap:18px}
 .sh .chip{width:52px;height:52px;border-radius:26px;font-size:24px;background:var(--c)}
 .sh h2{font-size:clamp(26px,3vw,36px);line-height:1.08}
 .where{font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--c);margin-top:4px}
-:root[data-theme=dark] .where,:root:not([data-theme=light]) .where{color:light-dark(var(--c),#F2D3A8)}
 .prog{height:8px;background:var(--sub);border-radius:4px;overflow:hidden;margin:-4px 0 16px}
 .prog i{display:block;height:100%;background:var(--c);transition:width .3s}
 .subs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:14px}
@@ -90,7 +90,6 @@ details.sec .items{padding:0 6px 10px}
 .switch{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);font-weight:600;cursor:pointer}
 .switch input{width:20px;height:20px;accent-color:var(--rust)}
 .alldone{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;background:#EAF2E2;color:#24401a;border:1px solid #b9d3a5;border-radius:12px;padding:14px 16px;margin:0 0 14px;font-weight:600}
-:root[data-theme=dark] .alldone{background:#22331c;color:#d9ecc9;border-color:#3d5a31}
 .howto{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px 16px}
 .howto summary{cursor:pointer;min-height:48px;display:flex;align-items:center;font-weight:600}
 .howto ol{margin:0 0 12px;padding-left:20px}
